@@ -1,0 +1,69 @@
+@charset "UTF-8";
+@font-face {
+    font-family: "Betel0";
+    src: url(fontes/Laviossa-Medium.otf) format(opentype);
+    font-weight: normal;
+}
+@font-face {
+    font-family: "Betel1";
+    src: url(fontes/AbrilFatface-Regular.ttf);
+    font-weight: normal;
+}
+:root {
+
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --font-destaque: 'Betel0', cursive;
+    --font-nome:'Betel1', cursive;
+
+}
+body{
+    background-image: linear-gradient(to right, #FFE9C2, #FFF3B6, #FFD1B6);
+}
+h1{
+    color: brown;
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+    font-family: var(--font-nome);
+    border-radius: 10px;
+    min-width: 320px;
+    max-width: 800px;
+    margin: auto;
+
+   }
+p{
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: left;
+    font-family: var(--fonte-padrao);
+}
+p1, p5{
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    font-family: var(--fonte-padrao);
+}
+p2, p3, h2, h3, h4{
+    color: brown;
+    font-size: 32pt;
+    font-weight: bold;
+    text-align: left;
+    font-family: var(--font-destaque);
+}
+ul{
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: left;
+    font-family: var(--fonte-padrao);
+}
+main img {
+    width:100%;
+}
+main img.pequena{
+    width: 50%;
+    display: block;
+    margin: auto;
+}
