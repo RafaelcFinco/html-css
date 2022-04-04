@@ -1,0 +1,63 @@
+@charset "UTF-8";
+@font-face {
+    font-family: "Betel0";
+    src: url(fontes/Laviossa-Medium.otf) format(opentype);
+    font-weight: normal;
+}
+@font-face {
+    font-family: "Betel1";
+    src: url(fontes/AbrilFatface-Regular.ttf);
+    font-weight: normal;
+
+}
+@font-face {
+    font-family: "Betel2";
+    src: url(fontes/Birds\ of\ Paradise.ttf);
+    font-weight: bold;
+}
+:root {
+
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --font-destaque: 'Betel0', cursive;
+    --font-nome:'Betel1', cursive;
+    --font-vers:'Betel2', cursive;
+    --cor01: #fceed6d5;
+    --cor02: #faf3d0f1;
+    --cor03: #eea197;
+    --cor04: #ec7070;
+}
+form {/*centralizar o formulario na pagina*/
+    margin: 0px;
+    width: 400px;
+    /*ver o esboço do formuario*/
+    padding: 1em;
+    border: 1px solid #CCC;
+    border-radius: 1em;
+}
+form div + div {
+    margin-top: 1em;
+}
+label {/*garantir que todos os rotulos sejam alinhados e tenha o mesmo tamanho*/
+    display: inline-block;
+    width: 90px;
+    text-align: right;
+}
+input, textarea {/*Para garantir que todos os campos de texto tenham as mesmas configurações*/
+    font: 1em var(--fonte-padrao);
+    width: 300px;
+    box-sizing: border-box;
+    border: 1px solid #999;
+}
+input:focus, textarea:focus{/*para dar poucos destaques aos elementos ativos*/
+    border-color: #000;
+}
+textarea{
+    vertical-align: top;
+    height: 5em;
+}
+.button{
+    padding-left: 90px;
+}
+button{
+    margin-left: .5em;
+}
